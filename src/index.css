@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,57 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+
+* {
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+body {
+  margin: 0;
+  /* width: 100%; */
+  /* width: 100vw; */
+  /* background: rgb(249, 213, 103); */
+  background: linear-gradient(169deg, rgba(249, 213, 103, 1) 20%, rgba(223, 122, 36, 1) 82%);
+  /* background-color: violet; */
+  /* background: repeating-linear-gradient(rgba(249, 213, 103, 1) , rgba(223, 122, 36, 1) 5%); */
+  /* background: repeating-linear-gradient(rgba(249, 213, 103, 1), rgba(223, 122, 36, 1) 10%, #1c120c 20%); */
+  font-family: "Raleway-Variable", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  /* background: rgb(223,122,36);
+    background: linear-gradient(169deg, rgba(223,122,36,1) 20%, rgba(249,213,103,1) 82%); */
+    /* display: flex;
+    justify-content: center; */
+}
+
+a {
+  color: #1c120c;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+h1 {
+  margin: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+input:focus, textarea:focus {
+  outline: none;
 }

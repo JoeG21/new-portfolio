@@ -1,0 +1,62 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0, .5);
+    z-index: 1000;
+    color: #1c120c;
+    font-size: 1.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-error, .modal-sent {
+    background-color: #e8e4df;
+    height: 60vh;
+    width: 50vw;
+    box-shadow: 0 40px 80px 0 rgba(0, 0, 0, 0.2), 0 40px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-title {
+    color: #e8e4df;
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-title img {
+    height: 40px;
+    width: 40px;
+    margin: 0 auto 0 20px;
+    cursor: pointer;
+}
+
+.modal-title h1 {
+    margin: auto;
+    position: absolute;
+}
+
+.modal-message {
+    height: 85%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-error a {
+    color: #df7a24;
+}
+
+.modal-error a:hover {
+    color: #f9d567;
+}

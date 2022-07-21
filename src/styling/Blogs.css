@@ -1,0 +1,67 @@
+.Blogs {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50fr 50fr;
+    grid-gap: 40px;
+    grid-template-areas: "card card";
+    font-size: 1.75rem;
+}
+
+.fail-blogs {
+    color: #f9d567;
+    background-color: #4d3f2e;
+    padding: 100px;
+    border: solid #e8e4df 4px;
+    outline: solid #1c120c 10px;
+    box-shadow: 0 40px 80px 0 rgba(0, 0, 0, 0.2), 0 40px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fail-blogs img {
+    filter: invert(93%) sepia(2%) saturate(1218%) hue-rotate(327deg) brightness(106%) contrast(82%);
+    height: 200px;
+    width: 200px;
+}
+
+.fail-blogs img:hover {
+    filter: invert(53%) sepia(62%) saturate(1475%) hue-rotate(350deg) brightness(95%) contrast(84%);
+}
+
+
+
+
+/* ************* */
+/* Blog Card */
+/* ************* */
+
+.blog-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 725px;
+}
+
+.card-top {
+    height: 85%;
+}
+
+.card-bottom {
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-top img {
+    height: 100%;
+    width: 100%;
+}
+
+.card-bottom h3 {
+    text-shadow:
+   -1px -1px 0 #4d3f2e,  
+    1px -1px 0 #4d3f2e,
+    -1px 1px 0 #4d3f2e,
+     1px 1px 0 #4d3f2e;
+}

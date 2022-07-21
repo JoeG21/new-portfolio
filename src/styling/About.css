@@ -1,0 +1,12 @@
+#about {
+    /* background-color: rgb(54, 54, 112); */
+    margin-top: 150px;
+    font-size: 2.25rem;
+}
+
+img.headshot {
+    height: auto;
+    width: 650px;
+    float: left;
+    margin-right: 40px;
+}
