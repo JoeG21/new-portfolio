@@ -27,10 +27,10 @@ const Navbar = (props) => {
         <>
             <Link to='/projects' key={1}>
                 Projects
-            </Link>,
+            </Link>
             <Link to='/blogs' key={2}>
                 Blogs
-            </Link>,
+            </Link>
             <Link to='/contact' key={3}>
                 Contact
             </Link>

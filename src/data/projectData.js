@@ -1,18 +1,19 @@
 // Full Photo of Project
 import React from 'react';
-import fullAstra from '../pictures/fullAstra.png'
-import fullVal from '../pictures/fullVal.png'
-import fullLK from '../pictures/fullLK.png'
-import fullQNK from '../pictures/fullQNK.png'
-import fullJP from '../pictures/fullJP.png'
+import fullJCG from '../pictures/project/fullJCG.png'
+import fullAstra from '../pictures/project/fullAstra.png'
+import fullVal from '../pictures/project/fullVal.png'
+import fullLK from '../pictures/project/fullLK.png'
+import fullQNK from '../pictures/project/fullQNK.png'
+import fullJP from '../pictures/project/fullJP.png'
 
 // Project Logo
-import logo from '../pictures/logo.png'
-import astra from '../pictures/astra.png'
-import val from '../pictures/val.png'
-import lk from '../pictures/lKeeper.png'
-import qnk from '../pictures/qNK.png'
-import jmakon from '../pictures/jmakon.png'
+import logo from '../pictures/projectLogo/logo.png'
+import astra from '../pictures/projectLogo/astra.png'
+import val from '../pictures/projectLogo/val.png'
+import lk from '../pictures/projectLogo/lKeeper.png'
+import qnk from '../pictures/projectLogo/qNK.png'
+import jmakon from '../pictures/projectLogo/jmakon.png'
 
 // Tech
 import javaScript from '../pictures/svg/javascript.svg'
@@ -27,10 +28,10 @@ import html from '../pictures/svg/html5.svg'
 import css from '../pictures/svg/css3.svg'
 import framer from '../pictures/svg/framerMotion.svg'
 
-const projectCards = [
+const projectData = [
     {
         id: 1,
-        photo: fullAstra,
+        photo: fullJCG,
         video: 'https://youtube.com/embed/oBZM17t8B1A',
         title: <img src={logo} className='project-title-mar' alt='Project Title' />,
         des: 'Created with JavaScript and React. Utilizing hooks, Email.js to establish communication through contact form for customers, and designed with CSS and Material-UI. Implemented Media Queries for responsiveness to all screen sizes and hosted by Netlify.',
@@ -86,4 +87,4 @@ const projectCards = [
     }
 ]
 
-export default projectCards
+export default projectData

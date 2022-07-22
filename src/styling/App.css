@@ -10,7 +10,7 @@
 
 .App-Container {
   color: #1c120c;
-  /* background-color: gray; */
+  background-color: gray;
   margin: 0 40px 0 40px;
   display: flex;
   flex-direction: column;
@@ -20,7 +20,7 @@
 .App {
   /* background-color: rgb(134, 134, 134); */
   /* position: relative; */
-  /* background-color: blue; */
+  background-color: blue;
   width: 100%;
   max-width: 3000px;
   min-height: 100vh;
@@ -37,11 +37,13 @@
 
 
 
+
+
 /* ********** */
 /* NAVBAR */
 /* ********** */
 .navbar {
-  /* background-color: green; */
+  background-color: green;
   height: 20vh;
   width: 100%;
   /* max-width: 3000px; */
@@ -79,6 +81,8 @@ img.logo {
 
 
 
+
+
 /* ********** */
 /* FOOTER  */
 /* ********** */
@@ -90,7 +94,6 @@ footer {
   /* background-color: #1c120c; */
   /* margin: 0; */
   /* padding: 0; */
-  width: 99vw;
   bottom: 0;
   font-size: 1.5rem;
   /* width: 100%; */
@@ -146,7 +149,7 @@ footer a:hover {
 }
 
 .footer-data li {
-  /* margin-bottom: 15px; */
+  margin-bottom: 15px;
   /* margin: 20px 0 0 0; */
 }
 
@@ -164,10 +167,7 @@ footer a:hover {
   border: none;
 }
 
-/* .footer-img {
-  height: 100%;
-  width: auto;
-} */
+
 
 
 
@@ -177,21 +177,24 @@ footer a:hover {
 /*****************/
 
 @media (orientation: portrait) and (max-width: 1000px) {
-  .App {
-    margin: 0 20px 0 20px;
+  .test-nav{
+    color: red;
+    background-color: #e8e4df;
+    /* padding: 20px; */
+    /* z-index: 10; */
+  }
+
+  .navbar-bnt button {
+    color: #1c120c;
+    background-color: #e8e4df;
+    border: #4d3f2e solid 4px;
+    outline: #1c120c solid 4px;
+    font-size: 1rem;
+    height: 50px;
+    width: 115px;
+  }
+
+  .menu-container {
+    background-color: rgba(0, 0, 0, 0.2);
   }
 }
-
-/* LOADING */
-/* .loading {
-  height: 100vh;
-  width: 100vw;
-  font-size: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: monospace;
-  color: green;
-  animation-name: loading;
-  animation-duration: 3.5s;
-} */

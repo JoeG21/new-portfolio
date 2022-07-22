@@ -5,9 +5,7 @@ function FooterInfo(props) {
         <div className='footer-data'>
             <label> {props.data.label} </label>
             <ul>
-                {/* {console.log(props.data.info)} */}
-                {/* {props.data.info.map(i => <li key={props.data.info}> {i} </li>)} */}
-                {/* {props.data.info.map(i => console.log(i))} */}
+                {props.data.info.map(i => <li key={i.key}> {i} </li>)}
             </ul>
         </div>
     )

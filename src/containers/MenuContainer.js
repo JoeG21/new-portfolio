@@ -21,9 +21,9 @@ const MenuContainer = (props) => {
   };
 
   return (
-    <>
+    <div className='navbar-bnt'>
       <Button
-        id="demo-positioned-button"
+        // id="demo-positioned-button"
         aria-controls={open ? 'demo-positioned-menu' : undefined}
         aria-haspopup="true"
         aria-expanded={open ? 'true' : undefined}
@@ -31,11 +31,13 @@ const MenuContainer = (props) => {
       >
         {page === '/' ? 'Home'
           : page === '/projects' ? 'Projects'
-            : console.log('menu')
+          : page === '/blogs' ? 'Blogs'
+          : page === '/contact' ? 'Contact'
+          : console.log('menu')
         }
       </Button>
       <Menu
-        id="demo-positioned-menu"
+        className="menu-container"
         aria-labelledby="demo-positioned-button"
         anchorEl={anchorEl}
         open={open}
@@ -49,10 +51,12 @@ const MenuContainer = (props) => {
           horizontal: 'left',
         }}
       >
-        <MenuItem onClick={e => handleClose(e)}><Link to='/' value='Home' name='Home'> Home </Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link to='/projects' value='Projects' name='Projects'> Projects </Link></MenuItem>
+        <MenuItem className='menu-item-c' onClick={handleClose}><Link className='menu-item' to='/'> Home </Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link to='/projects'> Projects </Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link to='/blogs'> Blogs </Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link to='/contact'> Contact </Link></MenuItem>
       </Menu>
-    </>
+    </div>
   )
 }
 

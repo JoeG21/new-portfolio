@@ -11,14 +11,12 @@ const Footer = () => {
         <footer>
             <div className="footer-nav">
                     <Link to="/"> Home </Link>
-                    {/* <Link to="/#about"> About </Link> */}
                     <Link to="/projects"> Projects </Link>
                     <Link to="/blogs"> Blogs </Link>
                     <Link to="/contact"> Contact </Link>
             </div>
 
-            {/* {footerData.map(data => <FooterCard key={data.id} data={data} />)} */}
-            {footerData.map(data => console.log(data))}
+            {footerData.map(data => <FooterCard key={data.id} data={data} />)}
         </footer>
     )
 }

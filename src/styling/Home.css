@@ -16,3 +16,17 @@
     -1px 1px 0 #4d3f2e,
     1px 1px 0 #4d3f2e;
 }
+
+
+
+
+/* ********* */
+/* Media Quires */
+/* ********* */
+
+@media (orientation: portrait) and (max-width: 1000px) {
+    .home {
+        font-size: 2rem;
+        text-align: center;
+    }
+}

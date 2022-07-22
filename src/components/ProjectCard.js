@@ -37,7 +37,7 @@ const ProjectCard = (props) => {
         <div className='half-project-card' onClick={() => handClick()}>
             <img src={props.card.photo} className='pic-vid-project' alt='Full Project' />
 
-            <div className='test-ti'>
+            <div className='logo-container'>
                 {props.card.id <= 3 ?
                     props.card.title
                     :
@@ -51,7 +51,7 @@ const ProjectCard = (props) => {
         <div className='full-project-card' onClick={() => handClick()}>
             <iframe src={props.card.video} title='Project' className='pic-vid-project' frameBorder='0' allowFullScreen />
 
-            <div className='test-ti'>
+            <div className='logo-container'>
                 {props.card.id <= 3 ?
                     props.card.title
                     :

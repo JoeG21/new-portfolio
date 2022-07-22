@@ -32,6 +32,8 @@
 
 
 
+
+
 /* ************* */
 /* Blog Card */
 /* ************* */
@@ -64,4 +66,20 @@
     1px -1px 0 #4d3f2e,
     -1px 1px 0 #4d3f2e,
      1px 1px 0 #4d3f2e;
+}
+
+
+
+
+
+/***************/
+/* Media Queries */
+/***************/
+
+@media (orientation: portrait) and (max-width: 1000px) {
+    .blog-card {
+        height: 450px;
+        text-align: center;
+        grid-column: span 2;
+    }
 }
