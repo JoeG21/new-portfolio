@@ -43,6 +43,8 @@ const ProjectCard = (props) => {
                     :
                     <img src={props.card.title} className='project-title' alt='Project Title' />
                 }
+                {/* <img src={props.card.title} className='project-title' alt='Project Title' /> */}
+
             </div>
         </div>
     )
@@ -73,18 +75,6 @@ const ProjectCard = (props) => {
                 </div>
 
                 {props.card.id === 2 ? repoWeb : justRepo}
-
-                {/* <div className='repo-btn'>
-                    <a href={props.card.repo} alt='GitHub Repo'>
-                        Repository
-                        <img src={gitHub} className='repo' alt='GitHub Logo' />
-                    </a>
-
-                    <a href={props.card.repo} alt='GitHub Repo'>
-                        Repository
-                        <img src={gitHub} className='repo' alt='GitHub Logo' />
-                    </a>
-                </div> */}
             </div>
         </div>
     )

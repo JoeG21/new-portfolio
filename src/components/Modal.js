@@ -29,8 +29,8 @@ const Modal = (props) => {
             </div>
 
             <div className='modal-message'>
-                <h2> Please Try Again Later </h2>
-                <h2> Contact: <a href="mailto:jcggomez@live.com" alt='Outlook Email'> jcggomez@live.com </a></h2>
+                <h2> Failed... </h2>
+                <h2> Email: <a href="mailto:jcggomez@live.com" alt='Outlook Email'> jcggomez@live.com </a></h2>
             </div>
         </div>
     )

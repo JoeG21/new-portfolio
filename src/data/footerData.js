@@ -26,7 +26,7 @@ const footerData = [
         id: 3,
         label: 'Resume',
         info: [
-            <a href='https://drive.google.com/uc?export=download&id=1lSrZotNPSUluojuQ0V9neCJHfjpWqisK' key='6' alt='Google Docs'>
+            <a href='https://drive.google.com/uc?export=download&id=17gg_WLQbTPLPvfySa6E25nKyQ6YsUBFO' key='6' alt='Google Docs'>
                 Download
             </a>
         ]

@@ -46,7 +46,6 @@ const projectData = [
         des: 'Created with JavaScript and React. Utilizing hooks, Email.js to establish communication through contact form for customers, and designed with CSS and Material-UI. Implemented Media Queries for responsiveness to all screen sizes and hosted by Netlify.',
         website: 'https://www.astrascapes.com/',
         tech: [javaScript, react, material, netlify, html, css],
-        // tech: ['JavaScript', 'React.js', 'Material-UI', 'Email.js'],
         repo: 'https://github.com/Tneebs/astrascapes_website'
     },
     {

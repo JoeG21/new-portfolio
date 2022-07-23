@@ -60,3 +60,23 @@
 .modal-error a:hover {
     color: #f9d567;
 }
+
+
+
+
+
+
+/* ********* */
+/* Media Quires */
+/* ********* */
+
+@media (orientation: portrait) and (max-width: 1000px) {
+    .modal-error, .modal-sent {
+        height: 70vh;
+        width: 90vw;
+    }
+
+    .modal-message {
+        font-size: 1rem;
+    }
+}
