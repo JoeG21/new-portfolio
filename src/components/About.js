@@ -4,6 +4,7 @@ import headshot from '../pictures/headshot.jpeg'
 
 
 
+
 const Home = () => {
     return (
         <div className='about-des'>

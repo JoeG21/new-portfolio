@@ -1,27 +1,47 @@
 import React from 'react';
 
-// import github from '../pictures/github.svg'
-// import linkedin from '../pictures/linkedin.svg'
-// import medium from '../pictures/medium.svg'
-// import youtube from '../pictures/youtube.svg'
-
 import About from './About'
+
+import { motion } from 'framer-motion'
+
+const containerVariants = {
+    hidden: {
+        opacity: 0
+    },
+    visible: {
+        opacity: 1,
+        transition: {
+            delay: 1.5,
+            duration: 1.5
+        }
+    },
+    exit: {
+        x: '-100vw',
+        transition: { ease: 'easeInOut' }
+    }
+}
 
 const Home = () => {
     return (
         <>
-            <div className='home'>
+            <motion.div className='home'
+                variants={containerVariants}
+                initial='hidden'
+                animate='visible'
+                exit='exit'
+            >
                 <h1> Full Stack </h1>
                 <h1> Web Developer </h1>
-            </div>
+            </motion.div>
 
-            <div id='about'>
+            <motion.div id='about'
+                variants={containerVariants}
+                initial='hidden'
+                animate='visible'
+                exit='exit'
+            >
                 <About />
-            </div>
-            {/* <Route path='/about'>
-                <About />
-            </Route> */}
-
+            </motion.div>
         </>
     )
 }

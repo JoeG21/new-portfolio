@@ -20,6 +20,8 @@ import {
   useLocation
 } from 'react-router-dom';
 
+import { AnimatePresence } from 'framer-motion'
+
 function App() {
   const location = useLocation()
 
@@ -33,6 +35,7 @@ function App() {
           <Route path='/projects' element={<Projects />} />
 
           <Route path='/blogs' element={<Blogs />} />
+
           <Route path='/' element={<Home />} />
         </Routes>
       </div>
@@ -41,11 +44,13 @@ function App() {
 
   return (
     <>
-      <div className='App-Container'>
-        {/* {loading ? loadingComponent : application} */}
-        {application}
-      </div>
-      <Footer />
+      <AnimatePresence exitBeforeEnter>
+        <div className='App-Container'>
+          {/* {loading ? loadingComponent : application} */}
+          {application}
+        </div>
+        <Footer />
+      </AnimatePresence>
     </>
   );
 }

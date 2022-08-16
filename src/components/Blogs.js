@@ -4,7 +4,24 @@ import { useState, useEffect } from 'react'
 import BlogCard from './BlogCard'
 import medium from '../pictures/svg/medium.svg'
 
+import { motion } from 'framer-motion'
 
+const containerVariants = {
+    hidden: {
+        opacity: 0
+    },
+    visible: {
+        opacity: 1,
+        transition: {
+            delay: .25,
+            duration: 1.5
+        }
+    },
+    exit: {
+        x: '-100vw',
+        transition: { ease: 'easeInOut' }
+    }
+}
 
 const Blogs = () => {
     const [blogs, setBlogs] = useState([])
@@ -17,7 +34,7 @@ const Blogs = () => {
 
     const failFetch = (
         <div className='fail-blogs'>
-            <h1> Having a hard time loading... 
+            <h1> Having a hard time loading...
                 <br />
                 But you can check them out here!
             </h1>
@@ -32,11 +49,16 @@ const Blogs = () => {
         <>
             {/* {blogs.status === 'ok' ? failFetch : 'okay'} */}
             {blogs.status === 'ok' ?
-                <div className='Blogs'>
+                <motion.div className='Blogs'
+                    variants={containerVariants}
+                    initial='hidden'
+                    animate='visible'
+                    exit='exit'
+                >
                     {/* {blogs.items.map(blog => <BlogCard key={blog.id} blog={blog} />)} */}
                     {blogs.items.slice(0, 6).map(blog => <BlogCard key={blog.title} blog={blog} />)}
-                </div>
-                : 
+                </motion.div>
+                :
                 failFetch
             }
         </>

@@ -6,15 +6,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(169deg, #7d674c, #1c120c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
 }
 
-.home h1 {
-    text-shadow:
-    -1px -1px 0 #4d3f2e,  
-    1px -1px 0 #4d3f2e,
-    -1px 1px 0 #4d3f2e,
-    1px 1px 0 #4d3f2e;
-}
+
 
 
 

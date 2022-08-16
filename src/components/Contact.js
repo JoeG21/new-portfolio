@@ -5,6 +5,24 @@ import Modal from '../components/Modal'
 
 import emailjs from '@emailjs/browser';
 
+import { motion } from 'framer-motion'
+
+const containerVariants = {
+    hidden: {
+        opacity: 0
+    },
+    visible: {
+        opacity: 1,
+        transition: {
+            delay: .25,
+            duration: 1.5
+        }
+    },
+    exit: {
+        x: '-100vw',
+        transition: { ease: 'easeInOut' }
+    }
+}
 
 const ContactInfo = () => {
     const [name, setName] = useState('')
@@ -37,7 +55,12 @@ const ContactInfo = () => {
     }
 
     return (
-        <div className='Contact'>
+        <motion.div className='Contact'
+            variants={containerVariants}
+            initial='hidden'
+            animate='visible'
+            exit='exit'
+        >
             <h1> Contact Form </h1>
 
             <form className="contact-form" onSubmit={e => handleSubmit(e)}>
@@ -61,7 +84,7 @@ const ContactInfo = () => {
             </form>
 
             <Modal open={open} sent={sent} onClose={onClose} />
-        </div>
+        </motion.div>
     );
 }
 

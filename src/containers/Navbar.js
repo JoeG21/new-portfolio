@@ -9,6 +9,8 @@ import {
     Link
 } from 'react-router-dom';
 
+import { motion } from 'framer-motion'
+
 const Navbar = (props) => {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth)
 
@@ -37,15 +39,37 @@ const Navbar = (props) => {
         </>
     )
 
+    const containerVariants = {
+        hidden: {
+            opacity: 0
+        },
+        visible: {
+            opacity: 1,
+            transition: {
+                delay: 1,
+                duration: 1.5
+            }
+        },
+        exit: {
+            x: '-100vw',
+            transition: { ease: 'easeInOut' }
+        }
+    }
+
     return (
-        <div className='navbar'>
+        <motion.div className='navbar'
+            variants={containerVariants}
+            initial='hidden'
+            animate='visible'
+            exit='exit'
+        >
             <div className='logo-con'>
                 <Link to='/'>
                     <img src={logo} className='logo' alt='Joe C Gomez' />
                 </Link>
             </div>
             {windowWidth < 1200 ? <MenuContainer location={props.location.pathname} /> : landscape}
-        </div>
+        </motion.div>
     )
 }
 

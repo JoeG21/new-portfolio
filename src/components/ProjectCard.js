@@ -4,6 +4,24 @@ import { useState } from 'react'
 import gitHub from '../pictures/svg/github.svg'
 import wwwLogo from '../pictures/svg/wwwLogo.svg'
 
+import { motion } from 'framer-motion'
+
+const containerVariants = {
+    hidden: {
+        opacity: 0
+    },
+    visible: {
+        opacity: 1,
+        transition: {
+            delay: .5,
+            duration: .5
+        }
+    },
+    exit: {
+        x: '-100vw',
+        transition: { ease: 'easeInOut' }
+    }
+}
 
 const ProjectCard = (props) => {
     const [expand, setExpand] = useState(false)
@@ -50,7 +68,12 @@ const ProjectCard = (props) => {
     )
 
     const fullCard = (
-        <div className='full-project-card' onClick={() => handClick()}>
+        <motion.div className='full-project-card' onClick={() => handClick()}
+            variants={containerVariants}
+            initial='hidden'
+            animate='visible'
+            exit='exit'
+        >
             <iframe src={props.card.video} title='Project' className='pic-vid-project' frameBorder='0' allowFullScreen />
 
             <div className='logo-container'>
@@ -76,7 +99,7 @@ const ProjectCard = (props) => {
 
                 {props.card.id === 2 ? repoWeb : justRepo}
             </div>
-        </div>
+        </motion.div>
     )
 
 
