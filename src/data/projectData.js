@@ -32,7 +32,7 @@ const projectData = [
     {
         id: 1,
         photo: fullJCG,
-        video: 'https://youtube.com/embed/oBZM17t8B1A',
+        video: 'https://youtube.com/embed/j6f741zJvus',
         title: <img src={logo} className='project-title-mar' alt='Project Title' />,
         des: 'Created with JavaScript and React. Utilizing hooks, Email.js to establish communication through contact form for customers, and designed with CSS and Material-UI. Implemented Media Queries for responsiveness to all screen sizes and hosted by Netlify.',
         tech: [javaScript, react, material, framer, netlify, html, css],
