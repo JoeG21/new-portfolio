@@ -21,16 +21,16 @@ const footerData = [
         info: [
             <a href="mailto:jcggomez@live.com" key='5' alt='Outlook Email'> jcggomez@live.com </a>,
         ]
-    },
-    {
-        id: 3,
-        label: 'Resume',
-        info: [
-            <a href='https://drive.google.com/uc?export=download&id=17gg_WLQbTPLPvfySa6E25nKyQ6YsUBFO' key='6' alt='Google Docs'>
-                Download
-            </a>
-        ]
     }
+    // {
+    //     id: 3,
+    //     label: 'Resume',
+    //     info: [
+    //         <a href='https://drive.google.com/uc?export=download&id=17gg_WLQbTPLPvfySa6E25nKyQ6YsUBFO' key='6' alt='Google Docs'>
+    //             Download
+    //         </a>
+    //     ]
+    // }
 ]
 
 export default footerData
